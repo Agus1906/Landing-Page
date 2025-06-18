@@ -1,0 +1,252 @@
+/* ESTILOS BASE  */
+body {
+  padding-top: 80px; /* Compensa el header fijo */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+
+}
+
+/* TIPOGRAFÍA QUE ELEGÍ */
+h1, h2, h3 {
+  color: #346bbd;
+  font-family: 'Arial', sans-serif;
+}
+
+.texto-explicativo {
+  max-width: 700px;
+  margin: 2rem auto 3rem;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.custom-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 1050;
+  background-color: #000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.custom-header .navbar-brand {
+  padding: 5px 0;
+}
+
+/* Main content */
+main.container {
+  margin-top: 20px;
+  padding-top: 0;
+  flex: 1;
+}
+
+
+/* Navbar */
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.custom-header .nav-link {
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.custom-header .nav-link:hover {
+  color: #346bbd;
+}
+
+/* Logo */
+.logo-img {
+  height: 60px;
+  width: auto;
+  transition: height 0.4s ease;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto 40px;
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: slideShow 3s infinite;
+}
+
+.slide:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.slide:nth-child(2) {
+  animation-delay: 3s;
+}
+
+@keyframes slideShow {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  40% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Productos */
+.producto {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  box-shadow: 0 0 15px rgba(52, 107, 189, 0.2);
+}
+
+.producto img {
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Galería */
+section.container h2 {
+  font-weight: 700;
+  color: #346bbd;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+section.container .row.g-3 > div {
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.container .row.g-3 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+section.container .row.g-3 > div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+/* Contacto */
+.contacto-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+#formulario-contacto .form-control {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#formulario-contacto .form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #346bbd;
+}
+
+.btn-enviar {
+  background-color: #346bbd;
+  border: none;
+  padding: 10px 25px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.btn-enviar:hover {
+  background-color: #2a5a9d;
+}
+
+/* Responsividad en la web */
+@media (max-width: 992px) {
+  .custom-header .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .custom-header .navbar-nav {
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .custom-header .nav-item {
+    margin: 5px 0;
+  }
+  
+  .custom-header .btn-outline-light {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+  
+  .custom-header {
+    height: 70px;
+  }
+  
+  .logo-img {
+    height: 50px;
+  }
+  
+  .contacto-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-img {
+    height: 40px;
+  }
+  
+  section.container .row.g-3 > div {
+    margin-bottom: 1rem;
+  }
+}

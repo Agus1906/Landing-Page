@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kayak Adventures</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+<header class="custom-header">
+  <nav class="navbar navbar-expand-lg navbar-dark container">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.png" alt="Kayak Adventures" class="logo-img">
+      </a>
+      
+      <button class="navbar-toggler" type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarContent"
+              aria-controls="navbarContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="templates/contacto.html">Contacto</a></li>
+        
+          <li class="nav-item d-lg-none mt-2">
+            <button class="btn btn-outline-light position-relative w-100" title="Carrito">
+              <i class="bi bi-cart"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+                0
+              </span>
+            </button>
+          </li>
+        </ul>
+        
+        <div class="d-none d-lg-block ms-3">
+          <button class="btn btn-outline-light position-relative" title="Carrito">
+            <i class="bi bi-cart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+              0
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <!-- Slider -->
+<section class="slider">
+  <div class="slides">
+    <img src="assets/slider/slide1.jpg" alt="Kayak en lago" class="slide">
+    <img src="assets/slider/slide2.jpg" alt="Aventura en kayak" class="slide">
+  </div>
+</section>
+
+
+ <!-- Bienvenida -->
+<section class="container mb-5 text-center bienvenida">
+  <h1 class="mb-4">Bienvenidos a Kayak Adventures</h1>
+  <p class="lead mx-auto" style="max-width: 700px;">
+    En Kayak Adventures nos especializamos en la venta de kayaks, accesorios y equipamiento para tus aventuras acuáticas. 
+    Ofrecemos productos de alta calidad para que disfrutes al máximo cada travesía, con asesoramiento profesional y atención personalizada. 
+    ¡Explorá nuevas aguas con nosotros!
+  </p>
+</section>
+
+
+  <!-- Productos -->
+<section id="productos" class="container mb-5">
+  <h2 class="mb-4">Nuestros Productos</h2>
+  <div class="row g-4">
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="producto">
+        <img src="assets/productos/kayak.jpg" alt="kayaks" class="img-fluid">
+        <h5 class="mt-3">Kayaks</h5>
+        <a href="templates/kayaks.html" class="btn btn-primary mt-2">Ver más</a>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="producto">
+        <img src="assets/productos/salvavidas.jpg" alt="Salvavidas" class="img-fluid">
+        <h5 class="mt-3">Salvavidas</h5>
+        <a href="templates/salvavidas.html" class="btn btn-primary mt-2">Ver más</a>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="producto">
+        <img src="assets/productos/remos.jpg" alt="Remos" class="img-fluid">
+        <h5 class="mt-3">Remos</h5>
+        <a href="templates/remos.html" class="btn btn-primary mt-2">Ver más</a>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="producto">
+        <img src="assets/productos/indumentaria.jpg" alt="Indumentaria" class="img-fluid">
+        <h5 class="mt-3">Indumentaria</h5>
+        <a href="templates/indumentaria.html" class="btn btn-primary mt-2">Ver más</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Galería -->
+<section id="galeria" class="container mb-5">
+  <h2 class="mb-4">Galería</h2>
+  <div class="row g-3">
+    <div class="col-6 col-md-3">
+      <img src="assets/galeria/imagen1.jpg" alt="Kayak en el lago" class="img-fluid rounded shadow-sm" />
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="assets/galeria/imagen2.jpg" alt="Personas remando en kayak"class="img-fluid rounded shadow-sm" />
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="assets/galeria/imagen3.jpg" alt="Personas remando en kayak" class="img-fluid rounded shadow-sm" />
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="assets/galeria/imagen4.jpg" alt="Kayak en lago" class="img-fluid rounded shadow-sm" />
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="assets/galeria/imagen5.jpg" alt="Grupo navegando en kayak" class="img-fluid rounded shadow-sm" />
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="assets/galeria/imagen6.jpg" alt="Kayak en lago al atardecer" class="img-fluid rounded shadow-sm" />
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="assets/galeria/imagen7.jpg" alt="Distintos kayaks" class="img-fluid rounded shadow-sm" />
+    </div>
+    <div class="col-6 col-md-3">
+      <img src="assets/galeria/imagen8.jpg" alt="Persona remando en kayak" class="img-fluid rounded shadow-sm" />
+    </div>
+  </div>
+</section>
+<!-- Sección de Contacto -->
+<section id="contacto" class="container mb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+      <div class="contacto-card p-4">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <form id="formulario-contacto" onsubmit="alert('Gracias por tu mensaje. Este es un ejemplo sin envío real.'); return false;">
+          <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" name="nombre" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Correo electrónico</label>
+            <input type="email" name="correo" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Tu mensaje</label>
+            <textarea name="mensaje" class="form-control" rows="4" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
+          </div>
+        </form>
+        <div id="respuesta" class="mt-3 text-center"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </script>
+</main>
+ <!-- FOOTER -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <h5>Seguinos</h5>
+      <div class="d-flex justify-content-center gap-4 mt-3">
+         <!--<a href="mailto:kayakadventure@gmail.com" class="text-white fs-3">
+          <i class="bi bi-envelope-fill"></i>
+        </a>-->
+        <a href="https://www.instagram.com/agus.irisarri/" class="text-white fs-3" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/agus.irisarri.1" class="text-white fs-3" target="_blank">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://wa.me/2616856158" class="text-white fs-3" target="_blank">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+      <p>kayakadventures@gmail.com</p>
+      <p>&copy; 2025 Kayak Adventures. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
+
