@@ -135,6 +135,16 @@ main.container {
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
+.producto {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.producto.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .producto:hover {
   box-shadow: 0 0 15px rgba(52, 107, 189, 0.2);
