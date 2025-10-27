@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Kayaks",
+    "imagen": "assets/productos/kayak.jpg",
+    "alt": "kayaks",
+    "enlace": "templates/kayaks.html"
+  },
+  {
+    "nombre": "Salvavidas",
+    "imagen": "assets/productos/salvavidas.jpg",
+    "alt": "Salvavidas",
+    "enlace": "templates/salvavidas.html"
+  },
+  {
+    "nombre": "Remos",
+    "imagen": "assets/productos/remos.jpg",
+    "alt": "Remos",
+    "enlace": "templates/remos.html"
+  },
+  {
+    "nombre": "Indumentaria",
+    "imagen": "assets/productos/indumentaria.jpg",
+    "alt": "Indumentaria",
+    "enlace": "templates/indumentaria.html"
+  }
+]
